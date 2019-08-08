@@ -1,0 +1,99 @@
+header {
+  height: 45%;
+  padding: 10px 20px 0px 20px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #F0F0F7),
+    url('../img/Mediterranean.jpg');
+  background-size: cover;
+  /* outline: 1px solid green; */
+}
+
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.nav-top__time {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.nav-top__info {
+  font-size: 12px;
+  /* font-weight: 700; */
+}
+
+.nav-top__info i {
+  margin-left: 2px;
+}
+
+.nav-more {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-more > i{
+  cursor: pointer;
+}
+
+.nav-pics {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 119px;
+  /* outline: 1px solid green; */
+}
+
+.nav-pics__small-pic {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  margin-left: 8px;
+  /* border: 1px solid green; */
+  background-size: cover;
+  cursor: pointer;
+}
+
+.nav-pics__small-pic:nth-of-type(1) {
+  background: url('../img/Mediterranean2.jpg') no-repeat -27px;
+  background-size: cover;
+}
+
+.nav-pics__small-pic:nth-of-type(2) {
+  background: url('../img/Mediterranean3.jpg') no-repeat;
+  background-size: cover;
+}
+
+.nav-pics__small-pic:nth-of-type(3) {
+  background: url('../img/Mediterranean4.jpg') no-repeat;
+  background-size: cover;
+}
+
+.nav-pics__more{
+  background: #3F67FF;
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.nav-pics__more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-info {
+  /* outline: 1px solid green; */
+  display: flex;
+}
+
+.nav-info  .nav-info__tag{
+  cursor: pointer;
+  color: #3F67FF;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 4px 9px;
+  border-radius: 13px 13px 13px 0;
+  background: #DCE3F8;
+  margin-right: 5px;
+  margin-top: 18px;
+}

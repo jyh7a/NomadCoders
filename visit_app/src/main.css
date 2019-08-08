@@ -1,0 +1,120 @@
+main {
+  height: 40%;
+  padding: 5px 20px 0px 20px;
+  background: #F0F0F7;
+  /* outline: 1px solid green; */
+}
+
+.main-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-top .title {
+  font-family: 'Righteous', cursive;
+  font-size: 22px;
+  /* font-weight: 900; */
+  font-weight: 700;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.main-top .like {
+  /* padding: 5px 10px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  color: red;
+  font-size: 12px;
+  cursor: pointer
+}
+
+.main-info .address {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.main-info .address i {
+  color: #3F67FF;
+  font-size: 10px;
+  margin-right: 5px;
+  cursor: pointer
+}
+
+.main-info .address__text {
+  opacity: 0.4;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.raing-distance {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.raing-distance i {
+  color: #FFBB01;
+  margin-right: 2px;
+  font-size: 13px;
+}
+
+.raing-distance i:nth-of-type(5) {
+  margin-right: 10px;
+}
+
+.raing-distance__left {
+  display: flex;
+  align-items: center;
+}
+
+.raing-distance__raiting {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.raing-distance__distance {
+  font-size: 14px;
+  opacity: 0.3;
+  font-weight: 600;
+}
+
+.main-content__over-view {
+  font-size: 10px;
+  opacity: 0.3;
+  font-weight: 700;
+}
+
+.main-content__description {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 15px;
+  opacity: .8;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.main-content__read-more {
+  font-size: 14px;
+  font-weight: 700;
+  color: #3F67FF;
+  cursor: pointer;
+}
+
+.main-content .circle {
+  display: flex;
+  justify-content: center;
+}
+
+.main-content .circle__effect {
+  width: 70px;
+  height: 70px;
+  margin-top: 3px;
+  background: #d7dde8;
+  border-radius: 50%;
+}
