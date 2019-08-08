@@ -1,0 +1,57 @@
+.friends-lists {
+  display: flex;
+  width: 112%;
+  justify-content: space-between;
+  padding-bottom: 24px;
+  /* outline: 3px solid red; */
+}
+
+.friends-lists .friends-lists__icon {
+  position: relative;
+  width: 53px;
+  height: 53px;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  box-shadow: 1px 6px 6px 2px #c5c5c5;
+  cursor: pointer;
+}
+
+.friends-lists__icon .plus-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.friends-lists .friends-lists__icon:nth-child(1) {
+  background: url('../img/atismata2.jpg') no-repeat -12px;
+  background-size: cover;
+}
+
+.friends-lists .friends-lists__icon:nth-child(2) {
+  background: url('../img/eingram.jpg') no-repeat -14px;
+  background-size: cover;
+}
+
+.friends-lists .friends-lists__icon:nth-child(3) {
+  background: url('../img/einfolk.jpg') no-repeat -25px;
+  background-size: cover;
+}
+
+.friends-lists .friends-lists__icon:nth-child(4) {
+  background: url('../img/ralgris.jpg') no-repeat 0;
+  background-size: cover;
+}
+
+.friends-lists .friends-lists__icon:nth-child(5) {
+  background: url('../img/yoruka.jpg') no-repeat 0;
+  background-size: contain;
+}

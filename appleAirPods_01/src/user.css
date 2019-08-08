@@ -1,0 +1,93 @@
+#user .wrapper{
+  opacity: 0;
+  animation:  user-wrapper-ani 1s ease-in-out 1s forwards; 
+}
+
+#user .background-img {
+  height: 45%;
+  background: url('http://gp.godpeople.com/wp-content/uploads/2018/05/GettyImages-898660948.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+#user .user-infro {
+  height: 67%;
+  margin-top: -8.5%;
+  /* background: rgba(255, 0, 0, 0.226); */
+}
+
+.user-infro .user-infro__content {
+  display: flex;
+  justify-content: center;
+  height: 30%;
+  padding-bottom: 3%;
+  /* outline: green solid 1px; */
+}
+
+.user-infro__content .user-avata {
+  width: 11vw;
+  height: 11vw;
+  margin-top: -1.5vw;
+  border: 0.5vw solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  /* background: #f00; */
+}
+
+.user-avata img {
+  width: 100%;
+}
+
+.user-infro .user-infro__content:nth-of-type(2) {
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.user-infro__content .user-name {
+  font-size: 2vw;
+  font-weight: 700;
+  margin-bottom: 1vw;
+}
+
+.user-infro__content .user-job {
+  font-size: 1.5vw;
+  font-weight: 700;
+  opacity: .3;
+}
+
+.user-infro .user-infro__content:nth-of-type(3){  
+  padding: 2vw 3vw 0 3vw;
+  justify-content: space-evenly;
+}
+
+.user-infro__content > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42%;
+  height: 70%;
+  font-size: 1.5vw;
+  font-weight: 700;
+  border-radius: 1vw;
+  background: #EAECFF;
+  color: #6B75FF;
+}
+
+.user-infro__content > div:hover{
+  background: #6B75FF;
+  color: #EAECFF;
+}
+
+@keyframes user-wrapper-ani{
+  0%{    
+    transform: scale(0);
+    opacity: 0;
+  } 
+  90%{
+    transform: scale(1.1);
+  }
+  100%{    
+    transform: scale(1);
+    opacity: 1;
+  }
+}

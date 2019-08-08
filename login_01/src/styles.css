@@ -1,0 +1,248 @@
+@import "fonts.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f7ff;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+#wrapper {
+  width: 18vw;
+  height: 35vw;
+  border-radius: 3vw;
+  padding: 0.7vw;
+  background: #fff;
+  box-shadow: 8px 8px 8px 7px #d2d9da, inset 2px 1px 0px 0px #d2d9da;
+  /* border: 1px solid green; */
+}
+
+#login-page {
+  width: 100%;
+  height: 100%;
+  border-radius: 2vw;
+  background: #f8f8f8;
+}
+
+.sign-in {
+  height: 60%;
+  /* outline: 1px solid green; */
+}
+
+.sign-in::before {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -1%;
+  content: "";
+  display: block;
+  width: 44%;
+  height: 8%;
+  background: #fff;
+  border-radius: 18%;
+  /* outline: 1px solid green; */
+}
+
+.or-sign-in {
+  height: 20%;
+  /* outline: 1px solid green; */
+}
+
+.help {
+  /* padding-top: 3%; */
+  height: 20%;
+  padding: 5% 5%;
+  /* outline: 1px solid green; */
+}
+
+.sing-in__row {
+  /* outline: 1px solid green; */
+}
+
+.sing-in__row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-in__title {
+  padding-top: 2%;
+  /* padding-bottom: 13%; */
+}
+
+.sign-in__title h1 {
+  font-size: 0.8vw;
+  font-weight: 600;
+  color: rgb(13, 13, 15);
+}
+
+.sign-in__form {
+  height: 83%;
+}
+
+.sign-in__form form {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /* outline: 1px solid green; */
+}
+
+.sign-in__form input[type="email"],
+.sign-in__form input[type="password"] {
+  padding: 0.5vw 1vw;
+  width: 93%;
+  height: 12%;
+  border: 0.05vw solid rgb(231, 231, 231);
+  border-radius: 0.5vw;
+  color: rgb(13, 13, 15);
+  /* margin-bottom: 1vw; */
+  /* text-indent: 0vw; */
+  /* outline: 1px solid red; */
+}
+
+.sign-in__form input::placeholder {
+  color: #ccc;
+  font-size: 0.8vw;
+  font-weight: 300;
+}
+
+form .forgotPassword {
+  /* display: block; */
+  width: 90%;
+  /* outline: 1px solid red; */
+  /* margin-left: 45%; */
+  margin-top: -5%;
+  text-align: left;
+  color: #e23150;
+  font-size: 0.5vw;
+  font-weight: 700;
+  /* outline: 1px solid green; */
+  text-align: right;
+}
+
+form .checkRow {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  padding-bottom: 8%;
+  /* height: 30%; */
+  /* outline: 1px solid green; */
+  /* margin-right: 6vw; */
+}
+
+.sign-in__form input[type="checkbox"] {
+  /* position: absolute; */
+  display: none;
+  /* margin-right: 0.5vw;
+  background: #fff; */
+  /* display: inline-block; */
+}
+
+.checkRow label:nth-of-type(1) {
+  /* position: absolute; */
+  width: 1vw;
+  height: 1vw;
+  border: 1px solid #ddd;
+  border-radius: 0.2vw;
+  margin-right: 0.5vw;
+}
+
+.sign-in__form input[type="checkbox"]:checked + label::after {
+  /* background: #f00; */
+  content: "√";
+  display: block;
+  color: rebeccapurple;
+  font-size: 1.2vw;
+  margin-top: -49%;
+  font-weight: bold;
+}
+
+form .remeberMe {
+  font-size: 0.6vw;
+  font-weight: 600;
+  color: #aaa;
+}
+
+form button[type="submit"] {
+  width: 90%;
+  padding: 0.7vw 0;
+  border: none;
+  background: #e2273e;
+  color: #fff;
+  font-size: 0.5vw;
+  border-radius: 1vw;
+  outline: none;
+  box-shadow: 1px 4px #999;
+}
+
+form button[type="submit"]:active {
+  transition: 0.1s;
+  box-shadow: 1px 2px #666;
+  transform: translateY(4px);
+}
+
+.or-sign-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.or-sign-in > span {
+  padding-left: 1vw;
+  font-size: 0.8vw;
+  font-weight: 600;
+  color: #555;
+}
+
+.or-sign-in__button-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.or-sign-in__button-row button {
+  width: 40%;
+  padding: 4% 0;
+  font-size: 0.4vw;
+  color: #fff;
+  border: none;
+  border-radius: 1vw;
+}
+
+.or-sign-in__button-row button:nth-of-type(1) {
+  background-color: #475a95;
+}
+
+.or-sign-in__button-row button:nth-of-type(2) {
+  background-color: #5ca1f2;
+}
+
+.help > div > span:nth-of-type(1) {
+  font-size: 0.6vw;
+  color: #999;
+}
+
+.help > div > span:nth-of-type(2) {
+  font-size: 0.6vw;
+  color: rgb(221, 84, 84);
+  font-weight: 700;
+}

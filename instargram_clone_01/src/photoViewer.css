@@ -1,0 +1,40 @@
+.photo-viewer .photo-list{
+  position: relative;
+  top: -153px;
+  animation: photo-viewer-photo-list-ani .5s ease-in-out;
+}
+
+.photo-viewer #wrapper{
+  padding: 0;;
+}
+
+.photo-viewer footer{
+  margin-left: 0px;
+}
+
+.photo-viewer .photo-section .fa-long-arrow-alt-left{
+  font-size: 25px;
+  font-weight:600;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.photo-viewer .photo-section img.my-avata,
+.photo-viewer .photo-column__content{
+  transform: scale(0.8);
+}
+
+.photo-viewer .photo-section img{
+  margin-right: -5px;
+}
+
+@keyframes photo-viewer-photo-list-ani{
+  0%{
+    top: 0;
+    opacity: 0;
+  }
+  100%{
+    top: -153px;
+    opacity: 1;
+  }
+}

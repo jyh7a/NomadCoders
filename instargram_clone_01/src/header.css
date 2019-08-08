@@ -1,0 +1,23 @@
+header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0px 20px 0px;
+}
+
+header nav .nav-column{
+  /* outline: 1px solid green; */
+}
+
+header nav .logo{
+  font-size: 16px;
+  font-weight: bold;  
+  font-family: 'Pacifico', cursive;
+  cursor: pointer;
+}
+
+header .nav-column i{
+  display: inline-block;
+  padding: 8px;
+  cursor: pointer;
+}

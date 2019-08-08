@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS States</title>
+  <style>
+    .box{
+      background-color: lightcoral;
+      font-size: 40px;
+      transition: 0.3s;
+    }
+    .box:hover{
+      background: lightgreen;
+    }
+    /* .box:active{
+      background: lightsalmon;
+    } */
+    .box:focus{ /* input , a , textarea 등 focus 줄수있는애들 한테 적용 */
+      background: rgb(122, 153, 255);
+    }
+  </style>
+</head>
+
+<body>
+  <textarea class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, maxime?</textarea>
+</body>
+
+</html>
