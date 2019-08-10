@@ -29,8 +29,8 @@
 }
 
 .user__avata {
-  width: 4vw;
-  height: 4vw;
+  width: 76.8px;
+  height: 76.8px;
   border-radius: 50%;
   box-shadow: 3px 9px 8px #b7b7b7;
   overflow: hidden;
@@ -114,3 +114,4 @@
   font-weight: 600;
   /* outline: 1px solid green; */
 }
+

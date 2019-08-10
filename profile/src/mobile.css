@@ -16,8 +16,23 @@
   display: none;
 }
 
-@media screen and (max-width: 1551px) {
+@media screen and (max-width: 989px) {
   .smallScreen {
     display: flex;
   }
+}
+
+@media screen and (max-width: 1561px) {
+  .main-user-contact {
+    margin-top: 2vw;
+  }
+
+  .main-user {
+    margin-top: 41%;
+  }
+
+  .uer-nav {
+    margin-top: 28%;
+  }
+
 }
