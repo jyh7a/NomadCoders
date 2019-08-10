@@ -1,0 +1,19 @@
+nav{  
+}
+
+.nav-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1vw;
+  /* outline: 1px solid green; */
+}
+
+.nav-row .time{
+  font-size: 0.7vw;
+  font-weight: 700;
+}
+
+.nav-column i{
+  font-size: 0.7vw;
+}

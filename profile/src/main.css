@@ -1,0 +1,116 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* outline: 1px solid green; */
+}
+
+.main-nav i {
+  font-size: 1.1vw;
+  color: grey;
+}
+
+.main-title {
+  font-size: 0.8vw;
+  color: #333;
+}
+
+.main-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40%;
+  /* outline: 1px solid green; */
+}
+
+.main-user>div {
+  margin-bottom: 1vw;
+}
+
+.user__avata {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  box-shadow: 3px 9px 8px #b7b7b7;
+  overflow: hidden;
+}
+
+.user__avata img {
+  width: 100%;
+}
+
+.main-user .user__name {
+  font-size: 0.9vw;
+  font-weight: 700;
+  margin-bottom: 0.4vw;
+  color: #2799FA;
+}
+
+.user__location {
+  font-size: 0.7vw;
+  color: #666;
+}
+
+.main-user-contact {
+  margin-top: 1vw;
+}
+
+.user-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-buttons>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48.6%;
+  height: 2.2vw;
+  background: #fff;
+  border-radius: 0.5vw;
+  color: #666;
+  box-shadow: 8px 9px 12px 0px #cacaca;
+  transition: 0.3s;
+  /* outline: 1px solid green; */
+}
+
+.user-buttons .contact-button {
+  color: #2799FA;
+  ;
+  background: #fff;
+}
+
+.user-buttons .contact-button:hover {
+  color: #fff;
+  ;
+  background: #2799FA;
+}
+
+.user-buttons .contact-info {
+  color: #fff;
+  ;
+  background: #2799FA;
+}
+
+.user-buttons .contact-info:hover {
+  color: #2799FA;
+  ;
+  background: #fff;
+}
+
+.user-info{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1.5vw;
+}
+
+.user-info > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #666;
+  font-size: .65vw;
+  font-weight: 600;
+  /* outline: 1px solid green; */
+}

@@ -1,0 +1,38 @@
+.uer-nav{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40%;
+  transition: .3s;
+  font-size: 1vw;
+  color: #bbb;
+}
+
+.uer-nav i:hover{
+  transform: scale(1.2);
+  color: #2799FA;
+}
+
+.uer-nav i.on{
+  transform: scale(1.2);
+  color: #2799FA;
+}
+
+footer{
+  position: relative;
+}
+
+footer::after{
+  position: absolute;
+  /* bottom: 0; */
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 9%;
+  content:'';
+  display: block;
+  width: 5.5vw;
+  height: 0.15vw;
+  border-radius: 1vw;
+  background: #aaa;
+
+}
+
