@@ -1,0 +1,30 @@
+footer{
+  position: relative;
+  left: -1vw;
+  width: 114%;
+  height: 11.5%;
+  background: #ffffff;
+  border-radius: 0 0 2vw 2vw;
+}
+
+footer nav{
+  height: 100%;
+}
+
+.footer-nav-icons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  color: gray;
+  font-size: 1vw;
+  cursor: pointer;
+  box-shadow: 0px -56px 48px 0px #dce9ffa6
+  /* border: 1px solid green; */
+}
+
+.footer-nav-icons i:hover{
+  transition: 0.2s;
+  transform: scale(1.1);
+  color: tomato;
+}

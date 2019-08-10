@@ -1,0 +1,38 @@
+header{
+  /* margin-bottom: 10px; */
+  height: 8%;
+  /* outline: 1px solid green; */
+}
+
+header nav{
+  height: 100%;
+}
+
+.header-nav-row{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.header-nav-row::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  display: block;
+  width: 7vw;
+  height: 1vw;
+  margin: -24px auto;
+  background: #fff;
+  border-radius: 0 0 0.5vw 0.5vw;
+  /* outline: 1px solid green; */
+}
+
+.header-nav-row h1{
+  font-size: 0.9vw;
+  opacity: 0.9;
+}
