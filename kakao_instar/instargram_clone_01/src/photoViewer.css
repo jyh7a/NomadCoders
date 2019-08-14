@@ -19,14 +19,24 @@
   margin-right: 20px;
 }
 
-.photo-viewer .photo-section img.my-avata,
-.photo-viewer .photo-column__content{
-  transform: scale(0.8);
+.photo-section img.my-avata,
+.photo-column__content{
+  transform: scale(0.9);
 }
 
 .photo-viewer .photo-section img{
-  margin-right: -5px;
+  /* margin-right: -5px; */
 }
+
+.photo-viewer #comment-checkBox-01:checked + .photo-section__comment{
+  display: none;
+}
+
+.photo-viewer #comment-checkBox-02:checked + .photo-section__comment{
+  display: none;
+}
+
+
 
 @keyframes photo-viewer-photo-list-ani{
   0%{

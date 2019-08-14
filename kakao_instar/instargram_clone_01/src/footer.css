@@ -57,3 +57,18 @@ footer .nav-column {
   color: #fff;
   background: #1DB66F;
 }
+
+.inedex .fas.fa-th-large{
+  background: #1DB66F;
+  color: #fff;
+}
+
+.photo-viewer .fas.fa-plus{
+  opacity: 1;
+  background: #1DB66F;
+  color: #fff;
+}
+
+.photo-viewer .footer-nav .nav-column:nth-child(2) i.fas.fa-plus {
+  opacity: 1;
+}

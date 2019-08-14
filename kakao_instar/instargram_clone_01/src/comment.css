@@ -1,0 +1,122 @@
+.comment .photo-column__content {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: end; */
+  align-items: flex-end;
+  min-width: 31px;
+}
+
+.comment .photo-column-comment {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.photo-section__more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1DB66F;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.photo-section__more i {
+  padding-right: 10px;
+}
+
+.photo-section:nth-child(2) .photo-section__header:nth-of-type(1) img {
+  background: url('../img/atismata.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.photo-section:nth-child(2) .photo-section__header:nth-of-type(2) img {
+  background: url('../img/einfolk.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.photo-section:nth-child(2) .photo-section__header:nth-of-type(3) img {
+  background: url('../img/eingram.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.photo-section:nth-child(2) .photo-section__header:nth-of-type(4) img {
+  background: url('../img/jyh7a2.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.photo-section:nth-child(2) .photo-section__header:nth-of-type(5) img {
+  background: url('../img/ralgris.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.photo-section:nth-child(2) .photo-section__header:nth-of-type(6) img {
+  background: url('../img/yoruka.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.photo-section:nth-child(3) .photo-section__header:nth-of-type(1) img {
+  background: url('../img/arcadia.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.photo-section:nth-child(3) .photo-section__header:nth-of-type(2) img {
+  background: url('../img/atismata2.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.photo-section:nth-child(3) .photo-section__header:nth-of-type(3) img {
+  background: url('../img/eingram.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#comment-checkBox-01,
+#comment-checkBox-02{
+  position: relative;
+  left: 110px;
+  top: -24px;
+  /* width: 37px; */
+  display: block;
+  transform: scale(4, 2);
+  opacity: 0;
+}
+
+.bookMark{
+  position: relative;
+  left: 13px;
+  transform: scale(1.8);
+  opacity: 0;
+}
+
+.heart-check{
+  position: relative;
+  left: 33px;
+  transform: scale(4.9, 1.8);
+  opacity: 0;
+  z-index: 99;
+}
+
+.bookMark:checked + i{
+  color: #1DB66F;
+  font-weight: 700;
+}
+
+.heart-check:checked + i{
+  color: tomato;
+  font-weight: 700;
+}
+
+.heart-check:checked ~ .heart{
+  visibility: hidden;
+  color: tomato;
+}
+
+.heart-check:checked ~ .heart::after{
+  content: '2,516';
+  display: inline;
+  position: relative;
+  top: 0px;
+  left: -24px;
+  visibility: visible;
+}
