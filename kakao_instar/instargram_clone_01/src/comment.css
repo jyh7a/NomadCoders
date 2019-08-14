@@ -105,6 +105,7 @@
 .heart-check:checked + i{
   color: tomato;
   font-weight: 700;
+  position: relative;
 }
 
 .heart-check:checked ~ .heart{
@@ -115,8 +116,8 @@
 .heart-check:checked ~ .heart::after{
   content: '2,516';
   display: inline;
-  position: relative;
+  position: absolute;
   top: 0px;
-  left: -24px;
+  left: 33px;
   visibility: visible;
 }

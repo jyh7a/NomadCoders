@@ -113,6 +113,7 @@
   display: flex;
   margin-right: 40px;
   cursor: pointer;
+  position: relative;
 }
 
 .photo-viewer .photo-column .photo-column__comment {
