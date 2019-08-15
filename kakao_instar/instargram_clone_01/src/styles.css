@@ -8,6 +8,7 @@
 @import 'search.css';
 @import 'search-photo-list.css';
 @import 'heart.css';
+@import 'user-self.css';
 
 * {
   margin: 0;
@@ -17,13 +18,17 @@
   list-style: none;
 }
 
-a{
+a {
   color: inherit;
   text-decoration: none;
   display: inline-block;
 }
 
-label{
+a:hover {
+  color: rgb(0, 129, 250);
+}
+
+label {
   display: block;
   width: 100%;
   /* height: 100%; */
@@ -36,7 +41,7 @@ body {
   min-height: 710px;
 }
 
-.cursor{
+.cursor {
   cursor: pointer;
 }
 
@@ -45,8 +50,8 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  
-  font-family:'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #wrapper {
@@ -65,11 +70,12 @@ body {
   width: 0.0000001px;
   background: transparent;
 }
+
 /* #wrapper::-webkit-scrollbar-thumb {
   background: transparent;
 } */
 
-.span-space{
+.span-space {
   position: relative;
   height: 73px;
 }
@@ -79,3 +85,15 @@ header {
   /* outline: 1px solid green; */
 }
 
+.photo-section__more:hover{
+  transform: rotateX(1turn);
+}
+
+.photo-column .fas.fa-ellipsis-h{
+  transition: 0.2s ease-in-out;
+}
+
+.photo-column .fas.fa-ellipsis-h:hover{
+  transform: scale(1.5);
+  color:rgb(0, 129, 250);
+}

@@ -55,17 +55,17 @@ footer .nav-column {
 .footer-nav .nav-column i:hover {
   opacity: 1;
   color: #fff;
-  background: #1DB66F;
+  background: rgb(0, 129, 250);
 }
 
 .inedex .fas.fa-th-large{
-  background: #1DB66F;
+  background: rgb(0, 129, 250);
   color: #fff;
 }
 
 .photo-viewer .fas.fa-plus{
   opacity: 1;
-  background: #1DB66F;
+  background: rgb(0, 129, 250);
   color: #fff;
 }
 

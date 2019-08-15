@@ -28,11 +28,11 @@
 }
 
 .search-bar .fa-search:hover{
-  color: #1DB66F;
+  color: rgb(0, 129, 250);
 }
 
 .search .footer-nav .nav-column:nth-child(2) i.fas.fa-search {
-  background: #1DB66F;
+  background: rgb(0, 129, 250);
   color: #fff;
   opacity: 1;
 }
@@ -46,7 +46,7 @@
 
 .search-search-bars i:hover{
   opacity: 0.8;
-  color: #1DB66F;
+  color: rgb(0, 129, 250);
 }
 
 .recommands{

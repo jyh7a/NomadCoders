@@ -1,0 +1,240 @@
+.user .footer-nav .nav-column:nth-child(2) i.far.fa-user {
+  opacity: 1;
+  background: rgb(0, 129, 250);
+  color: #fff;
+}
+
+.nav-column i:hover{
+  color:rgb(0, 129, 250);
+}
+
+.user #wrapper {
+  padding: 0;
+}
+
+.user nav {
+  padding: 0 10px;
+}
+
+.user-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+
+.user .photo-section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  /* padding-bottom: 20px; */
+  /* padding: 0 20px 20px 20px; */
+  flex-wrap: wrap;
+}
+
+
+.photo-column.user-photo-column .shop-tag {
+  bottom: 3px;
+  left: 54px;
+  font-size: 20px;
+  background: rgb(0, 129, 250);
+}
+
+.user .photo-column-avata {
+  margin: 0;
+  position: relative;
+}
+
+.user-photo-column img {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+  box-shadow: 1px 6px 6px 2px #c5c5c5;
+  border-radius: 50%;
+  border: 0.5px solid gray;
+}
+
+.user-taps {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.user-tap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.user-tap:hover{
+  transform: rotateY(1turn);  
+  color:rgb(0, 129, 250);
+}
+
+.user-tap:hover .count-name{
+  color:rgb(0, 129, 250);
+}
+
+.user-tap .count {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.user-tap .count-name {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 600;
+  font-size: 13px;
+  transition: 0.4s ease-in-out;
+}
+
+.user-profile {
+  width: 202px;
+}
+
+.user-profile__modify {
+  text-align: center;
+  border: 1.2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 0;
+}
+
+.description .description-name {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.description .description-descripts {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.description .description-homepage {
+  font-size: 13px;
+  font-weight: 600;
+  color: #003569;
+}
+
+.description {
+  width: 100%;
+  margin-top: 20px;
+  padding: 0 20px;
+  margin-bottom: 15px;
+}
+
+.user-3dan-taps {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.user-3dan-taps i {
+  font-size: 25px;
+  color: #bbb;
+}
+
+.user-3dan-taps i:hover {
+  transform: scale(1.2);
+  color:rgb(0, 129, 250);
+}
+
+.user-main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.user-main__photo-list .photo-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.user-main__photo-list .photo-list:nth-of-type(1) .photo:nth-of-type(1) .photo-img{
+  background: url('../img/Undefeated\ Bahamut\ Chronicle.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.user-main__photo-list .photo-list:nth-of-type(1) .photo:nth-of-type(2) .photo-img{
+  background: url('../img/Undefeated\ Bahamut\ Chronicle2.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.user-main__photo-list .photo-list:nth-of-type(1) .photo:nth-of-type(3) .photo-img{
+  background: url('../img/arcadia.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.user-main__photo-list .photo-list:nth-of-type(2) .photo:nth-of-type(1) .photo-img{
+  background: url('../img/atismata.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.user-main__photo-list .photo-list:nth-of-type(2) .photo:nth-of-type(2) .photo-img{
+  background: url('../img/atismata2.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.user-main__photo-list .photo-list:nth-of-type(2) .photo:nth-of-type(3) .photo-img{
+  background: url('../img/book.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.user-main__photo-list .photo-list:nth-of-type(3) .photo:nth-of-type(1) .photo-img{
+  background: url('../img/einfolk.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.user-main__photo-list .photo-list:nth-of-type(3) .photo:nth-of-type(2) .photo-img{
+  background: url('../img/eingram.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.user-main__photo-list .photo-list:nth-of-type(3) .photo:nth-of-type(3) .photo-img{
+  background: url('../img/girls.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.user-main__photo-list .photo-list:nth-of-type(4) .photo:nth-of-type(1) .photo-img{
+  background: url('../img/ralgris.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.user-main__photo-list .photo-list:nth-of-type(4) .photo:nth-of-type(2) .photo-img{
+  background: url('../img/school.png') no-repeat center;
+  background-size: cover;
+}
+
+.user-main__photo-list .photo-list:nth-of-type(4) .photo:nth-of-type(3) .photo-img{
+  background: url('../img/yoruka.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.user-main__photo-list .photo-list:nth-of-type(5) .photo:nth-of-type(1) .photo-img{
+  background: url('../img/Undefeated\ Bahamut\ Chronicle.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.user-main__photo-list .photo-list:nth-of-type(5) .photo:nth-of-type(2) .photo-img{
+  background: url('../img/Undefeated\ Bahamut\ Chronicle2.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.user-main__photo-list .photo-list:nth-of-type(5) .photo:nth-of-type(3) .photo-img{
+  background: url('../img/arcadia.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.user-main__photo-list .photo-img:hover{
+  transform: scale(1.2);
+}

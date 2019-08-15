@@ -15,11 +15,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #1DB66F;
+  background: rgb(0, 129, 250);
   color: #fff;
   border-radius: 10px;
   font-weight: 700;
   cursor: pointer;
+  transition: 0.4s ease-in-out;
 }
 
 .photo-section__more i {
@@ -98,7 +99,7 @@
 }
 
 .bookMark:checked + i{
-  color: #1DB66F;
+  color: rgb(0, 129, 250);
   font-weight: 700;
 }
 

@@ -1,6 +1,6 @@
 .heart .footer-nav .nav-column:nth-child(2) i.far.fa-heart {
   opacity: 1;
-  background: #1DB66F;
+  background: rgb(0, 129, 250);
   color: #fff;
 }
 
@@ -17,18 +17,18 @@
   display: flex;
   justify-content: center;
   padding: 10px 0;
-  border-bottom: 2px solid rgba(29, 182, 111, 0.356);
+  border-bottom: 2px solid rgba(0, 129, 250, 0.3);
   font-weight: 700;
   color: #444444;
 }
 
 .header-menu>a:hover>div {
-  border-bottom: 2px solid #1DB66F;
+  border-bottom: 2px solid rgb(0, 129, 250);
   color: #111;
 }
 
 .heart-following .header-menu>a:nth-of-type(1)>div {
-  border-bottom: 2px solid #1DB66F;
+  border-bottom: 2px solid rgb(0, 129, 250);
   color: #111;
 }
 
@@ -228,7 +228,7 @@
 }
 
 .heart-my-board .header-menu>a:nth-of-type(2)>div {
-  border-bottom: 2px solid #1DB66F;
+  border-bottom: 2px solid rgb(0, 129, 250);
   color: #111;
 }
 
