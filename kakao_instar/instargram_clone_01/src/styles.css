@@ -7,6 +7,7 @@
 @import 'comment.css';
 @import 'search.css';
 @import 'search-photo-list.css';
+@import 'heart.css';
 
 * {
   margin: 0;
