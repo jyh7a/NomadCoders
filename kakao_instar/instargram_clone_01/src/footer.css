@@ -5,7 +5,7 @@ footer {
   display: block;
   margin-left: 0px;
   bottom: 139px;
-  bottom: 0;
+  bottom: -2px;
   width: 328px;
   height: 73px;
   background: #fff;

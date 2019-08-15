@@ -58,9 +58,11 @@ body {
   position: relative;
   width: 340px;
   height: 710px;
-  border: 6px solid #160D39;
   border-radius: 29px;
   overflow-x: hidden;
+  border: 4px solid rgba(0, 129, 250, .7);
+  border: 4px solid rgba(0,0,0,.5);
+  box-shadow: #7c798aa8 13px 16px 36px;
   /* overflow-y: hidden; */
   padding: 0 5px;
   background: #EDF0F6;
@@ -85,15 +87,15 @@ header {
   /* outline: 1px solid green; */
 }
 
-.photo-section__more:hover{
+.photo-section__more:hover {
   transform: rotateX(1turn);
 }
 
-.photo-column .fas.fa-ellipsis-h{
+.photo-column .fas.fa-ellipsis-h {
   transition: 0.2s ease-in-out;
 }
 
-.photo-column .fas.fa-ellipsis-h:hover{
+.photo-column .fas.fa-ellipsis-h:hover {
   transform: scale(1.5);
-  color:rgb(0, 129, 250);
+  color: rgb(0, 129, 250);
 }
