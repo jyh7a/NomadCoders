@@ -4,6 +4,11 @@
   justify-content: space-between;
   padding-bottom: 24px;
   /* outline: 3px solid red; */
+  transition: 0.3s ease-in-out;
+}
+
+.friends-lists:hover{
+  margin-left: -14%;
 }
 
 .friends-lists .friends-lists__icon {

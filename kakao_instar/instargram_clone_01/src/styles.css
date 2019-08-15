@@ -5,12 +5,15 @@
 @import 'photoViewer.css';
 @import 'footer.css';
 @import 'comment.css';
+@import 'search.css';
+@import 'search-photo-list.css';
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   vertical-align: baseline;
+  list-style: none;
 }
 
 a{
@@ -30,6 +33,10 @@ body {
   height: 100%;
   min-width: 340px;
   min-height: 710px;
+}
+
+.cursor{
+  cursor: pointer;
 }
 
 body {
