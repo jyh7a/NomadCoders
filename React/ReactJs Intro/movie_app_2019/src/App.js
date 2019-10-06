@@ -1,91 +1,60 @@
 import React from 'react';
-import Proptypes from 'prop-types';
+import axios from 'axios';
+import Movie from './Movie';
+import "./App.css";
 
-function MmdCharacter({name, picture, rating}){
-  return (
-    <div>
-      <h3>I like {name}</h3>
-      <h4>{rating}</h4>
-      <img src={picture} alt={name} height="200" ></img>
-    </div>
-  )
+class App extends React.Component {
+  state = {
+    isLoading: true,
+    movies: []
+  }
+
+  getMovies = async () => {
+    console.log(1);
+    const {
+      data: {
+        data: {movies}
+      }
+    } = await axios.get('https://yts-proxy.now.sh/list_movies.json?sort_by=rating');
+    // console.log(movies);
+    console.log(2);
+    this.setState({movies, isLoading: false});
+    console.log(3);
+  }
+
+  componentDidMount(){
+    this.getMovies();
+    console.log('i am componentDidMount');
+
+  }
+
+  render(){
+    console.log('i am render');
+    const {isLoading, movies} = this.state;
+    return (
+    <section className="container">
+      {isLoading 
+        ? (<div className="loader">
+            <span className="loader__text">Loading...</span>
+          </div>)
+        :( 
+        <div className="movies">
+        {movies.map(movie => (
+        <Movie
+          key={movie.id}
+          id={movie.id} 
+          year={movie.year} 
+          title={movie.title} 
+          summary={movie.summary}
+          poster={movie.medium_cover_image} 
+          genres={movie.genres}
+        />
+      ))}
+      </div>
+      )}
+    </section>
+    )
+  }
 }
-
-MmdCharacter.propTypes = {
-   name: Proptypes.string.isRequired,
-   picture: Proptypes.string.isRequired,
-   rating: Proptypes.number.isRequired
-}
-
-function App() {
-  return (
-    <div>
-     {mmdLike.map(item => (
-      <MmdCharacter
-        key={item.id} 
-        name={item.name} 
-        picture={item.image}
-        rating={item.rating}
-      />
-     ))}
-    </div>
-  
-  );
-}
-
-
-
-
-
-const mmdLike = [
-  {
-    id:1,
-    name:'haku',
-    image:"haku.jpg",
-    rating:5.3,
-  },
-  {
-    id:2,
-    name:'Juon Kiku',
-    image:"Juon Kiku.jpg",
-    rating:4.2,
-  },
-  {
-    id:33,
-    name:'luka',
-    image:"luka.jpg",
-    rating:3.9,
-  },
-  {
-    id:4,
-    name:'lyn',
-    image:"lyn.jpg",
-    rating:8,
-  },
-  {
-    id:5,
-    name:'miku',
-    image:"miku.jpg",
-    rating:12,
-  },
-  {
-    id:6,
-    name:'miku_chair',
-    image:"miku_chair.jpg",
-    rating:4,
-  },
-  {
-    id:7,
-    name:'neru',
-    image:"neru.jpg",
-    rating:23.3,
-  },
-  {
-    id:8,
-    name:'teto',
-    image:"teto.jpg",
-    rating:16,
-  },  
-];
 
 export default App;
