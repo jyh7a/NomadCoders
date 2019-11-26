@@ -6,19 +6,21 @@ const Container = styled.div`
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 `;
 
 const Loader = styled.span`
-    font-size: 280px;
-    display: inline-block;
-    margin-top: -180px;
+  font-size: 280px;
+  display: inline-block;
+  margin-top: -180px;
 `;
 
 export default () => (
   <Container>
-    <Loader role="img" aria-label="Loading">
-      ⏰
+    <Loader>
+      <span role="img" aria-label="Loading" aria-labelledby="Loading">
+        ⏰
+      </span>
     </Loader>
   </Container>
 );
