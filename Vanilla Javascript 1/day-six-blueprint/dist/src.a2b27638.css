@@ -65,18 +65,20 @@ option{
 }
 
 .mapViewer.korea{
-   background: url('./img/korea.jpg') no-repeat center;
+   background: url('/korea.285db301.jpg') no-repeat center;
    background-size: cover;
 }
 .mapViewer.greece{
-   background: url('./img/greece.jpg') no-repeat center;
+   background: url('/greece.1367630c.jpg') no-repeat center;
    background-size: cover;
 }
 .mapViewer.turkey{
-   background: url('./img/turkey.jpg') no-repeat center;
+   background: url('/turkey.184560c9.jpg') no-repeat center;
    background-size: cover;
 }
 .mapViewer.finland{
-   background: url('./img/finland.jpg') no-repeat center;
+   background: url('/finland.3766a271.jpg') no-repeat center;
    background-size: cover;
 }
+
+/*# sourceMappingURL=/src.a2b27638.css.map */
