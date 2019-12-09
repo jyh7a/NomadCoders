@@ -1,11 +1,11 @@
-const form = document.querySelector(".js-form"),
+const form = document.querySelector(".js-form-greeting"),
    input = form.querySelector("input"),
    greetings = document.querySelector(".js-greetings");
 
 const USER_LS = "currentUser",
    SHOWING_CN = "showing";
 
-function saveName(text){
+function saveName(text) {
    localStorage.setItem(USER_LS, text);
 }
 
