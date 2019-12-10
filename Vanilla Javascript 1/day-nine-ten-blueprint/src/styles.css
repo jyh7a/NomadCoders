@@ -1,0 +1,353 @@
+/* reset */
+* {
+   margin: 0;
+   padding: 0;
+}
+
+html,
+body {
+   height: 100%;
+   color: #fff;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+ul,
+li,
+ol {
+   list-style: none;
+}
+
+body {
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+   background-color: #090909;
+   background:url("../img/doit_coverjpg.jpg");
+   /* background-size: cover; */
+}
+
+body::before{
+   content: "";
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: #00000069;
+   z-index: -1;
+}
+
+/* common */
+.outline {
+   outline: 1px solid white;
+}
+
+.cursor {
+   cursor: pointer;
+}
+
+.dp-none {
+   display: none !important;
+}
+
+.dp-block {
+   display: block !important;
+}
+
+.dp-flex {
+   display: flex !important;
+}
+
+.pos-rel {
+   position: relative;
+}
+
+.modal {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   position: fixed;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   background-color: #1d1f20;
+   /* display: none; */
+}
+
+.close {
+   position: absolute;
+   top: 50px;
+   right: 50px;
+   color: white;
+   font-size: 2em;
+   /* background-color: white; */
+   z-index: 100;
+}
+
+/*  */
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+h1 {
+   font-size: 7em;
+   margin-bottom: 80px;
+   margin-top: -80px;
+   font-family: "Saira Stencil One", cursive;
+   font-weight: normal;
+   /* transform: rotateY(45deg); */
+   animation: ani1 1s infinite alternate-reverse ease-in-out;
+}
+
+.h1{
+   font-size: 3em;
+}
+
+.wrap {
+   /* height: 100%; */
+   display: flex;
+   flex-direction: column;
+   /* justify-content: center; */
+   align-items: center;
+   /* padding: 20px; */
+}
+
+.write {
+   width: 100px;
+   color: #fff;
+   padding: 1em 2em;
+   border: 2px solid #afafaf;
+   border-radius: 100px;
+   text-align: center;
+   margin: 50px 0;
+   box-shadow: 9px 5px 14px 2px rgba(255, 255, 255, 0.45);
+   overflow: hidden;
+}
+
+.write:before {
+   background-color: #dc4a38;
+   content: "";
+   width: 120%;
+   height: 254%;
+   position: absolute;
+   -webkit-transform: rotate(45deg);
+   transform: rotate(45deg);
+   top: 46%;
+   left: -90%;
+   transition: all 0.35s;
+   transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.write span{
+   transition: all 0.35s 0.35s;
+   transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+   transform: scale(1);
+   display: inline-block;
+   font-family: "Saira Stencil One", cursive;
+   font-weight: normal;
+}
+.write:hover span{
+   transform: scale(1.3);
+}
+
+.write:hover:before {
+   top: -68%;
+   left: -8%;
+}
+
+
+
+.content-wrap {
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   justify-content: space-evenly;
+}
+
+.modal-form {
+   width: 500px;
+   height: 500px;
+   background-color: rgba(0, 0, 0, 0.8);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   z-index: 0;
+   opacity: 0.8;
+}
+
+.modalViewer-video {
+   opacity: 1;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 0;
+}
+
+.block-mouse {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   /* background: #e67c7c88; */
+}
+
+.modal-h2 {
+   font-size: 4em;
+   margin-top: -160px;
+   margin-bottom: 60px;
+   font-family: "Saira Stencil One", cursive;
+   font-weight: normal;
+}
+
+.modal-input {
+   border: none;
+   outline: none;
+   width: 300px;
+   height: 100px;
+   text-align: center;
+   font-size: 30px;
+   background-color: inherit;
+   border-bottom: 5px solid #8181fa;
+   border-radius: 5px;
+   color: white;
+}
+
+.modal-input:focus{
+   animation: opacity-0-to-1 0.5s infinite alternate-reverse linear;
+}
+
+.toDoList {
+   padding: 40px;
+   font-size: 20px;
+}
+
+.finished {
+   margin-top: 20px;
+}
+
+.pending-li {
+   margin: 10px 0 10px 1em;
+}
+
+.x-btn,
+.f-btn {
+   margin-left: 10px;
+}
+
+.pending,
+.finished {
+   font-size: 1.5em;
+   font-family: "Saira Stencil One", cursive;
+   font-weight: normal;
+}
+
+.pending li,
+.finished li {
+   font-size: 0.8em;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.movieViewer {
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.movieViewer h2 {
+   margin-bottom: 20px;
+   font-family: "Saira Stencil One", cursive;
+   font-weight: normal;
+   font-size: 1.7em;
+}
+
+.movieViewer-video {
+   display: none;
+   border-radius: 20px;
+}
+
+.movieViewer-default {
+   font-size: 10em;
+   display: none;
+}
+
+/* animation */
+@keyframes opacity-0-to-1 {
+   0% {
+      border-bottom: 5px solid transparent;
+   }
+   100% {
+      border-bottom: 5px solid #8181fa;
+   }
+}
+
+@keyframes ani1 {
+   0% {
+      transform: scale(0.9);
+   }
+   100% {
+      transform: scale(1);
+   }
+}
+
+/* gradient border */
+.gradient-border {
+   --borderWidth: 6px;
+   background: #1d1f20;
+   position: relative;
+   border-radius: var(--borderWidth);
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.gradient-border:after {
+   content: "";
+   position: absolute;
+   top: calc(-1 * var(--borderWidth));
+   left: calc(-1 * var(--borderWidth));
+   height: calc(100% + var(--borderWidth) * 2);
+   width: calc(100% + var(--borderWidth) * 2);
+   background: linear-gradient(
+      60deg,
+      #f79533,
+      #f37055,
+      #ef4e7b,
+      #a166ab,
+      #5073b8,
+      #1098ad,
+      #07b39b,
+      #6fba82
+   );
+   border-radius: calc(2 * var(--borderWidth));
+   z-index: -1;
+   animation: animatedgradient 3s ease alternate infinite;
+   background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+   0% {
+      background-position: 0% 50%;
+   }
+   50% {
+      background-position: 100% 50%;
+   }
+   100% {
+      background-position: 0% 50%;
+   }
+}
