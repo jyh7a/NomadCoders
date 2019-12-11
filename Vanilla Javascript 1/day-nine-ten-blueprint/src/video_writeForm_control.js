@@ -24,7 +24,7 @@ let finisgedFlag = false;
 
 const VIDOE_SRC_ARRAY = [
    "https://www.youtube.com/embed/5-sfG8BV8wU?autoplay=1&loop=1&playlist=5-sfG8BV8wU",
-   "https://www.youtube.com/embed/QruaJ8cNNds?autoplay=1&loop=1enablejsapi=1&playlist=QruaJ8cNNds",
+   "https://www.youtube.com/embed/QruaJ8cNNds?autoplay=1&loop=1&enablejsapi=1&playlist=QruaJ8cNNds",
    "https://www.youtube.com/embed/QruaJ8cNNds?mute=1&loop=1&enablejsapi=1&playlist=QruaJ8cNNds"
 ];
 

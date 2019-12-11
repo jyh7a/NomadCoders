@@ -146,7 +146,7 @@ var pendingCount = 1;
 var finishedCount = 1;
 var addFlag = false;
 var finisgedFlag = false;
-var VIDOE_SRC_ARRAY = ["https://www.youtube.com/embed/5-sfG8BV8wU?autoplay=1&loop=1&playlist=5-sfG8BV8wU", "https://www.youtube.com/embed/QruaJ8cNNds?autoplay=1&loop=1enablejsapi=1&playlist=QruaJ8cNNds", "https://www.youtube.com/embed/QruaJ8cNNds?mute=1&loop=1&enablejsapi=1&playlist=QruaJ8cNNds"];
+var VIDOE_SRC_ARRAY = ["https://www.youtube.com/embed/5-sfG8BV8wU?autoplay=1&loop=1&playlist=5-sfG8BV8wU", "https://www.youtube.com/embed/QruaJ8cNNds?autoplay=1&loop=1&enablejsapi=1&playlist=QruaJ8cNNds", "https://www.youtube.com/embed/QruaJ8cNNds?mute=1&loop=1&enablejsapi=1&playlist=QruaJ8cNNds"];
 
 var HanndlerMovieViewerH2 = function HanndlerMovieViewerH2() {
   setTimeout(function () {
