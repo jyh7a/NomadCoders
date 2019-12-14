@@ -25,8 +25,8 @@ ol {
 body {
    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-   background-color: #090909;
-   background: url("./img/bg-01.jpg") no-repeat center;
+   background-color: #1e1e1e;
+   background: url("/bg-01.69755dd8.jpg") no-repeat center;
    background-size: cover;
 }
 
@@ -43,6 +43,12 @@ body::before {
 }
 
 /* common */
+h1{
+   text-align: center;
+   margin-bottom: 30px;
+   margin-top: -30px;
+}
+
 .outline {
    outline: 1px solid white;
 }
@@ -113,8 +119,15 @@ body::before {
    text-overflow: initial;
    white-space: initial;
    background-color: rgba(0, 0, 0, 0.5);
-   position: relative;
-   /* width: 312px; */
+   position: fixed;
+   width: 100%;
+   left: 0;
+   text-align: center;
+   z-index: 10;
+}
+
+.previousResult.ellipsis:hover + .nowResult{
+   margin-top: 51px;
 }
 
 .grayColor {
@@ -291,3 +304,6 @@ body {
       left: 124%;
    }
 }
+
+
+/*# sourceMappingURL=/src.a2b27638.css.map */
