@@ -649,18 +649,18 @@ h1 {
 }
 
 body.Thunderstorm .bgCover-01 {
-   background: url(./img/light1.png) no-repeat -1% -4%;
+   background:  url(./img/light1.png) no-repeat -1% -4%;
    animation: Thunderstorm 5s cubic-bezier(0.4, 0, 1, 1) infinite;
    opacity: 1;
 }
 body.Thunderstorm .bgCover-02 {
-   background: url(./img/light2.png) no-repeat center center;
-   background-size: contain;
-   animation: Thunderstorm 7s 2s cubic-bezier(0.4, 0, 1, 1) infinite;
+   background:  url(./img/light2.png) no-repeat center center;
+   background-size: cover;
+   animation: Thunderstorm2 3s 2s cubic-bezier(0.4, 0, 1, 1) infinite;
    opacity: 1;
 }
 body.Thunderstorm .bgCover-03 {
-   background: url(./img/light3.png) no-repeat 141% -140%;
+   background:  url(./img/light3.png) no-repeat 141% -140%;
    animation: Thunderstorm 4s cubic-bezier(0.4, 0, 1, 1) infinite;
    opacity: 1;
 }
@@ -669,10 +669,25 @@ body.Thunderstorm .bgCover-03 {
    0% {
       opacity: 0;
    }
-   10% {
+   20% {
       opacity: 1;
    }
-   11% {
+   21% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 0;
+   }
+}
+
+@keyframes Thunderstorm2 {
+   0% {
+      opacity: 0;
+   }
+   50% {
+      opacity: 1;
+   }
+   51% {
       opacity: 0;
    }
    100% {
