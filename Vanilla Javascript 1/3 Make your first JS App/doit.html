@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>DO IT LIST 😘</title>
+      <link rel="stylesheet" href="doit.css" />
+      <link
+         href="https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap"
+         rel="stylesheet"
+      />
+      <script
+         src="https://kit.fontawesome.com/463a3aaaf2.js"
+         crossorigin="anonymous"
+      ></script>
+   </head>
+
+   <body>
+      <div class="remainTime">
+         30 seconds left until the background changes.
+      </div>
+
+      <div class="wraper ">
+         <!-- greeting -->
+         <form class="js-form-greeting form ">
+            <!-- Hi there~ -->
+            <input
+               class="cursor"
+               type="text"
+               placeholder="What is your name?"
+            />
+            <div class="fomr-arrow-01 cursor">
+               <i class="fas fa-arrow-right"></i>
+            </div>
+         </form>
+
+         <h4 class="js-greetings greetings  ellipsis"></h4>
+
+         <div class="js-clock">
+            <h1>00:00</h1>
+            <!-- <div class="js-clock-cover"> -->
+            <!-- </div> -->
+         </div>
+
+         <div class="bottom  ">
+            <!-- toDo -->
+            <form class="js-toDoForm ">
+               <input class="cursor" type="text" placeholder="Write a to do!" />
+               <div class="fomr-arrow-02 cursor">
+                  <i class="fas fa-arrow-right"></i>
+               </div>
+            </form>
+
+            <ul class="js-toDoList "></ul>
+
+            <!-- weatehr -->
+            <div class="weatehr-box ">
+               <span class="js-weather "> </span>
+               <span class="js-weather-icon"
+                  ><img
+                     src="http://openweathermap.org/img/wn/10d.png"
+                     alt="날씨 아이콘"
+               /></span>
+            </div>
+         </div>
+
+         <div class="allRest  cursor"></div>
+      </div>
+
+      <!-- force select-->
+      <div class="selectForced">
+         Weather Effect
+         <select name="weatehrEffect">
+            <option value="Defatl">Defatl</option>
+            <option value="Thunderstorm">Thunderstorm</option>
+            <option value="Drizzle">Drizzle</option>
+            <option value="Rain">Rain</option>
+            <option value="Snow">Snow</option>
+            <option value="Mist">Mist</option>
+            <option value="Smoke">Smoke</option>
+            <option value="Haze">Haze</option>
+            <option value="Dust">Dust</option>
+            <option value="Fog">Fog</option>
+            <option value="Sand">Sand</option>
+            <option value="Ash">Ash</option>
+            <option value="Squall">Squall</option>
+            <option value="Tornado">Tornado</option>
+            <option value="Clear">Clear</option>
+            <option value="Clouds">Clouds</option>
+         </select>
+      </div>
+
+      <div class="project">Nomad Coders VanillaScript Project</div>
+      <div class="copyRight">ⓒ 2019. jyh7a All Rights Reserved.</div>
+
+      <!-- bgWeatherEffect -->
+      <!-- <div class="weatherEffectBG">sfsd</div> -->
+
+      <!-- bgCover -->
+      <div class="bgCover">
+         <div class="bgCover-01"></div>
+         <div class="bgCover-02"></div>
+         <div class="bgCover-03"></div>
+      </div>
+
+      <!-- scripts -->
+      <script src="clock.js"></script>
+      <script src="greeting.js"></script>
+      <script src="todo.js"></script>
+      <script src="weather.js"></script>
+      <script src="background.js"></script>
+   </body>
+</html>
