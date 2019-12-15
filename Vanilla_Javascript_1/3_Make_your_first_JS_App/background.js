@@ -12,7 +12,8 @@ function handleImageLoadEnd() {
 
 function paintImage() {
    const el = document.querySelector(".bgImage");
-
+   const optionDefault = select.querySelector('option');
+   optionDefault.selected = true;
    body.className = currentIconString;
    console.log(currentIconString);
    console.log(paintFlag);
@@ -37,14 +38,14 @@ function paintImage() {
    // image.addEventListener("loadend", handleImageLoadEnd);
 }
 
-function paintImagePeriodically() {
-   console.log(1);
-   const image = new Image();
-   // alert(currentIconString);
-   image.src = `https://source.unsplash.com/1600x900/?${currentIconString},nature`;
-   image.classList.add("bgImage");
-   body.appendChild(image);
-}
+// function paintImagePeriodically() {
+//    console.log(1);
+//    const image = new Image();
+//    // alert(currentIconString);
+//    image.src = `https://source.unsplash.com/1600x900/?${currentIconString},nature`;
+//    image.classList.add("bgImage");
+//    body.appendChild(image);
+// }
 
 function init() {
    // const randomNumber = genRandom();

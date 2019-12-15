@@ -8,6 +8,7 @@ let iconAPI = "http://openweathermap.org/img/wn/10dx.png";
 
 // clear, clouds, rain, thunderstorm, snow, mist
 let currentIconString = null;
+let currentIconOringString = null;
 const ICON_STRING_DETER = [
    "Thunderstorm",
    "Drizzle",
@@ -51,8 +52,10 @@ function getWeather(lat, lon) {
          const place = json.name;
          let icon = json.weather[0].icon;
          currentIconString = json.weather[0].main;
+         currentIconOringString = currentIconString;
          // currentIconString = "Tornado";
-         console.log("currentIconString", currentIconString);
+         // console.log("currentIconString", currentIconString);
+         console.log("currentIconOringString", currentIconOringString);
          icon = icon.slice(0, icon.length - 1);
          icon = icon.concat("d");
          weather.innerText = `${temperature}℃ @ ${place}`;
@@ -123,15 +126,16 @@ function allRestF() {
    }
 }
 
-function handlerSelect(){
-   const effect = this.value;
+function handlerSelect() {
+   let effect = this.value;
+   if (effect === "Defatl") effect = currentIconOringString;
+   body.className = effect;
 }
-
 
 function init() {
    loadCoords();
    allRest.addEventListener("click", allRestF);
-   select.addEventListener('change', handlerSelect);
+   select.addEventListener("change", handlerSelect);
 }
 
 init();
