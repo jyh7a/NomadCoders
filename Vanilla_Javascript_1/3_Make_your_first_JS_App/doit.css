@@ -189,6 +189,7 @@ body {
    min-height: 820px;
    min-width: 780px;
    /* margin-top: 370px; */
+   z-index: 10;
 }
 
 .wraper::before {
