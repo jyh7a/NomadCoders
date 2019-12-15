@@ -840,7 +840,7 @@ body.Smoke .bgCover-01 {
    }
 }
 body.Haze .bgCover-01 {
-   background: url(./img/haze1.png) no-repeat center center;
+   background: rgba(0, 0, 0, 0.7) url(./img/haze1.png) no-repeat center center;
    background-size: cover;
    animation: Smoke 4s linear infinite alternate-reverse;
    opacity: 1;
