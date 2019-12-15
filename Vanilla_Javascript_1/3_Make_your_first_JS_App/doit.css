@@ -255,6 +255,16 @@ body {
    z-index: -1;
 }
 
+/* .bgCover2 {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.2);
+   z-index: -1;
+} */
+
 .bgCover-01,
 .bgCover-02,
 .bgCover-03 {
@@ -263,7 +273,7 @@ body {
    left: 0;
    width: 100%;
    height: 100%;
-   background-color: rgba(0, 0, 0, 0.2);
+   /* background-color: rgba(0, 0, 0, 0.2); */
    z-index: -1;
 }
 

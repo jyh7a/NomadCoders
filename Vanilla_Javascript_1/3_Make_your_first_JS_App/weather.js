@@ -129,6 +129,7 @@ function allRestF() {
 function handlerSelect() {
    let effect = this.value;
    if (effect === "Defatl") effect = currentIconOringString;
+   if (effect === "None") effect = '';
    body.className = effect;
 }
 
