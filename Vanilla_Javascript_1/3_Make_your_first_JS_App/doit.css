@@ -815,7 +815,7 @@ body.Mist .bgCover-03 {
    }
 }
 body.Smoke .bgCover-01 {
-   background: url(./img/Smoke.png) no-repeat center center;
+   background: url(./img/smoke.png) no-repeat center center;
    background-size: contain;
    animation: Smoke 4s linear infinite alternate-reverse;
    opacity: 0.5;
