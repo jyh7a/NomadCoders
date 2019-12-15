@@ -334,7 +334,7 @@ button {
 }
 
 .js-form-greeting input::placeholder {
-   color: white;
+   color: rgba(255, 255, 255, 0.8);
 }
 
 .greetings {
@@ -497,7 +497,7 @@ h1 {
 }
 
 .js-toDoForm input::placeholder {
-   color: white;
+   color: rgba(255, 255, 255, 0.5);
    /* font-family: "Black Ops One", cursive; */
 }
 
