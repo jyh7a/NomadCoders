@@ -863,9 +863,9 @@ body.Dust .bgCover-01 {
    }
 }
 body.Fog .bgCover-01 {
-   background: url(./img/fog.png) no-repeat center center;
+   background: rgba(255,255,255,0.5) url(./img/fog.png) no-repeat center center;
    background-size: cover;
-   animation: Haze 5s ease-in-out infinite alternate;
+   animation: Haze 3s ease-in-out infinite alternate;
    opacity: 1;
 }
 body.Sand .bgCover-01 {
