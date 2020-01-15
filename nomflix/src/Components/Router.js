@@ -12,6 +12,7 @@ export default () => (
    <>
       <Header />
       <Switch>
+         {/* <Route path="/" exact component={Home} /> */}
          <Route path="/" exact component={Home} />
          <Route path="/tv" exact component={TV} />
          <Route path="/search"  component={Search} />
