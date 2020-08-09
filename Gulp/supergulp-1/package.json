@@ -1,0 +1,23 @@
+{
+  "name": "supergulp-1",
+  "version": "1.0.0",
+  "description": "Lean Gulp",
+  "main": "index.js",
+  "author": "jyh7a",
+  "license": "MIT",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build"
+  },
+  "dependencies": {
+    "del": "^5.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/register": "^7.10.5",
+    "gulp": "^4.0.2",
+    "gulp-pug": "^4.0.1",
+    "gulp-webserver": "^0.9.1"
+  }
+}
